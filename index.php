@@ -1,5 +1,7 @@
 <?php
+//bismillah
 include 'config.php';
+$git_d=0;
 ?>
 <!doctype html>
 <html lang="en">
