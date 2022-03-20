@@ -16,7 +16,7 @@ include 'config.php';
 <body>
 <div class="container">
     <h1 class="text text-center">Qarzlar haqidagi ma'lumot</h1>
-    <a href="index.php" class="btn btn-success">Ro'yhatga qaytish</a>
+    <a href="index.php" class="btn btn-success">Qarzdorlar ro'yhatiga qaytish</a>
 <!--        <form class=" d-flex justify-content-between" action="" method="post">-->
 <!--            <input style="width: 400px; height: 40px; border: 1px solid blue" placeholder="Kalit so'zni kiriting..." type="search" class=" form-control">-->
 <!--            <input style="width: 100px;" type="submit" class="btn btn-outline-primary form-control" value="Izlash">-->
