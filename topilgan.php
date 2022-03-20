@@ -55,7 +55,20 @@ include 'config.php';
                                 $sql2="SELECT * FROM qarzdor where id='$tt'";
                                 $result2=mysqli_query($conn,$sql2);
                                 $dat = mysqli_fetch_assoc($result2);
-                                echo $dat['name'];
+                                $matn=$dat['name'];
+                                $m_boshi=strpos($matn,$search);
+                                $m_oxiri=strlen($search);
+                                for($i=0;$i<strlen($matn);$i++){
+                                    if($i>=$m_boshi && $i<($m_boshi+$m_oxiri)){
+                                        ?>
+                                        <span style="color: #f6a002; margin: -2px; font-weight: 900;"><?php echo $matn[$i] ?></span>
+                                <?php
+                                    }else{
+                                        ?>
+                                        <span style="margin: -2px;"><?php echo $matn[$i]?></span>
+                                <?php
+                                    }
+                                }
                                 ?>
                             </a>
                         </td>
