@@ -1,7 +1,7 @@
 <?php
 //bismillah
 include 'config.php';
-$git_p=17;
+$git_p=1700;
 ?>
 <!doctype html>
 <html lang="en">
