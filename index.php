@@ -22,7 +22,7 @@ $git_p=1700;
             <input name="search" style="width: 400px; height: 40px; border: 1px solid blue" placeholder="Kalit so'zni kiriting..." type="search" class=" form-control">
             <input style="width: 100px;" type="submit" class="btn btn-outline-primary form-control" value="Izlash">
         </form>
-        <a href="" class="btn btn-success"> Hisobot qurish</a>
+        <a href="hisobot.php" class="btn btn-success"> Hisobot qurish</a>
     </div>
 
     <div>
