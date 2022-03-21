@@ -17,22 +17,24 @@ $git_p=1700;
 <body>
 <div class="container">
     <h1 class="text text-center">Qarzlar haqidagi ma'lumot</h1>
-    <div class="d-flex justify-content-between"> <a href="add.php" class="btn btn-success"> + qarzdor qo'shish</a>
+    <div class="d-flex justify-content-between mb-2"> <a href="add.php" class="btn btn-success">Qarzdor qo'shish</a>
         <form class=" d-flex justify-content-between" action="topilgan.php" method="post">
             <input name="search" style="width: 400px; height: 40px; border: 1px solid blue" placeholder="Kalit so'zni kiriting..." type="search" class=" form-control">
             <input style="width: 100px;" type="submit" class="btn btn-outline-primary form-control" value="Izlash">
-        </form></div>
+        </form>
+        <a href="" class="btn btn-success"> Hisobot qurish</a>
+    </div>
 
     <div>
-        <table class="table table-striped">
+        <table class="table table-striped text-center">
             <tr>
-                <th>Tartib raqami</th>
-                <th>Qarzdor</th>
-                <th>Qarz miqdori</th>
-                <th>Amallar</th>
+                <th style="width: 15%">Tartib raqami</th>
+                <th style="width: 25%;">Qarzdor</th>
+                <th style="width: 25%">Qarz miqdori</th>
+                <th style="width: 35%">Amallar</th>
             </tr>
     <?php
-    $sql="SELECT * FROM qarzlar";
+    $sql="SELECT * FROM qarzlar ORDER BY id DESC";
 
     $result=mysqli_query($conn,$sql);
     if (mysqli_num_rows($result) > 0) {
@@ -43,7 +45,7 @@ $git_p=1700;
             <tr>
                 <td><?php echo $sn?></td>
                 <td>
-                    <a href="show.php? id=<?php echo $ff ?>">
+                    <a href="show.php? id=<?php echo $ff ?>" style="width: 100%;" class="btn  text-primary">
                     <?php
                     $tt=$data['qarzdor_id'];
                     $sql2="SELECT * FROM qarzdor where id='$tt'";
@@ -68,8 +70,9 @@ $git_p=1700;
                     echo $ss." so'm ";
                     ?> </td>
                 <td>
-                    <a href="tulash.php? id=<?php echo $tt?>" class="btn btn-info">To'lash</a>
-                    <a href="berish.php? id=<?php echo $tt?>" class="btn btn-warning">Qarz berish</a>
+                    <a href="tulash.php? id=<?php echo $tt?>" class="btn btn-outline-primary">To'lash</a>
+                    <a href="berish.php? id=<?php echo $tt?>" class="btn btn-outline-warning text-dark">Qarz berish</a>
+                    <a href="uzish.php? id=<?php echo $tt?>" class="btn btn-outline-danger ">Barcha qarzlarni uzish</a>
                 </td>
             </tr>
 

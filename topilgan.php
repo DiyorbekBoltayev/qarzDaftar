@@ -23,7 +23,7 @@ include 'config.php';
 <!--        </form></div>-->
 
 
-        <table class="table table-striped">
+        <table class="table table-striped text-center">
             <tr>
                 <th>Tartib raqami</th>
                 <th>Qarzdor</th>
@@ -49,7 +49,7 @@ include 'config.php';
                     <tr>
                         <td><?php echo $sn?></td>
                         <td>
-                            <a href="show.php? id=<?php echo $ff ?>">
+                            <a href="show.php? id=<?php echo $ff ?>" style="width: 200px;" class="btn text-primary">
                                 <?php
                                 $tt=$data['qarzdor_id'];
                                 $sql2="SELECT * FROM qarzdor where id='$tt'";
@@ -87,8 +87,9 @@ include 'config.php';
                             echo $ss." so'm ";
                             ?> </td>
                         <td>
-                            <a href="tulash.php? id=<?php echo $tt?>" class="btn btn-info">To'lash</a>
-                            <a href="berish.php? id=<?php echo $tt?>" class="btn btn-warning">Qarz berish</a>
+                            <a href="tulash.php? id=<?php echo $tt?>" class="btn btn-outline-primary">To'lash</a>
+                            <a href="berish.php? id=<?php echo $tt?>" class="btn btn-outline-warning text-dark">Qarz berish</a>
+                            <a href="uzish.php? id=<?php echo $tt?>" class="btn btn-outline-danger ">Barcha qarzlarni uzish</a>
                         </td>
                     </tr>
 

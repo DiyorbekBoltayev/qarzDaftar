@@ -5,7 +5,7 @@ $sql="select * from qarzdor where id='$idsi'";
 $result=mysqli_query($conn,$sql);
 $data=mysqli_fetch_assoc($result);
 
-$sql="select * from history where qarzdor_id='$idsi'";
+$sql="select * from history where qarzdor_id='$idsi' ORDER BY id DESC";
 $result=mysqli_query($conn,$sql);
 $historys=mysqli_fetch_all($result);
 
