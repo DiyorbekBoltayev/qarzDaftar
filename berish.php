@@ -45,7 +45,7 @@ $data_qarzlar=mysqli_fetch_assoc($result);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>To'lash</title>
 </head>
 <body>
 
@@ -79,7 +79,7 @@ $data_qarzlar=mysqli_fetch_assoc($result);
         </div>
 
         <br>
-        <input type="submit" name="submit" class="form-control btn btn-success" value="Qo'shish">
+        <input type="submit" name="submit" class="form-control btn btn-success" value="Berish">
     </form>
 </div>
 

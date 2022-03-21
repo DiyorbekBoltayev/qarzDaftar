@@ -79,7 +79,7 @@ $data_qarzlar=mysqli_fetch_assoc($result);
         </div>
 
         <br>
-        <input type="submit" name="submit" class="form-control btn btn-success" value="Qo'shish">
+        <input type="submit" name="submit" class="form-control btn btn-success" value="To'lash">
     </form>
 </div>
 
