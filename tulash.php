@@ -52,7 +52,7 @@ $data_qarzlar=mysqli_fetch_assoc($result);
 
 <h1 class="text text-primary text-center">Qarzni to'lash oynasi</h1>
 <a href="index.php" class="btn btn-primary">Qarzdorlar ro'yhatiga qaytish</a>
-<div class="p-3" style="background-color: rgba(160,191,167,0.66); border-radius: 20px; width: 400px; height: 530px; margin: 10px auto">
+<div class="p-3" style="background-color: rgba(239,243,239,0.66); box-shadow: 0px 0px 20px 20px #dad7ea; border-style: solid;border 30px; border-color:  #7009ef; border-radius: 20px;width: 400px; height: 530px; margin: 10px auto">
     <form action="" method="post">
 
         <div class="mb-3 text-center h3">
@@ -66,20 +66,20 @@ $data_qarzlar=mysqli_fetch_assoc($result);
         </div>
 
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">To'layotgan summasi</label>
+            <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">To'layotgan summasi</label>
             <input type="number" name="tsum" class="form-control" required  id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Izoh</label>
+            <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">Izoh</label>
             <input type="text" name="izoh" class="form-control"  required id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Sana</label>
+            <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">Sana</label>
             <input type="date" name="sana" class="form-control" required  id="exampleInputPassword1">
         </div>
 
         <br>
-        <input type="submit" name="submit" class="form-control btn btn-success" value="To'lash">
+        <input style=" font-weight: 700; font-size: 16px;" type="submit" name="submit" class="form-control btn btn-outline-success" value="To'lash">
     </form>
 </div>
 

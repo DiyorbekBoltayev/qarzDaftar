@@ -67,32 +67,32 @@ if(isset($_POST['submit'])){
 <body>
 <h1 class="text text-primary text-center">Qarzdor qo'shish</h1>
 <a href="index.php" class="btn btn-primary">Qarzdorlar ro'yhatiga qaytish</a>
-<div class="p-3" style="background-color: rgba(160,191,167,0.66); border-radius: 20px; width: 400px; height: 530px; margin: 10px auto">
+<div class="p-3" style="background-color: rgba(239,243,239,0.66); box-shadow: 0px 0px 20px 20px #c8c2ec; border-style: solid;border 30px; border-color:  #7009ef; border-radius: 20px; width: 400px; height: 530px; margin: 10px auto">
     <form action="" method="post">
 
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Qarzdor ismi</label>
+            <label for="exampleInputEmail1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarzdor ismi</label>
             <input type="text" name="name" class="form-control" required   id="exampleInputEmail1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Telefon raqami</label>
+            <label for="exampleInputEmail1" style="color:#7009ef; font-weight: 700; font-size: 16px; "class="form-label">Telefon raqami</label>
             <input type="text" name="phone" class="form-control" required  id="exampleInputEmail1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Qarz summasi</label>
+            <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarz summasi</label>
             <input type="number" name="summasi" class="form-control" required  id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Qarz izoh</label>
+            <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarz izoh</label>
             <input type="text" name="izoh" class="form-control"  required id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Sana</label>
+            <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Sana</label>
             <input type="date" name="sanasi" class="form-control" required  id="exampleInputPassword1">
         </div>
 
         <br>
-        <input type="submit" name="submit" class="form-control btn btn-success" value="Qo'shish">
+        <input type="submit" name="submit" style="font-weight: 700; font-size: 16px; " class="form-control btn btn-outline-success" value="Qo'shish">
     </form>
 </div>
 

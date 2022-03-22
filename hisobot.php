@@ -22,16 +22,24 @@ $sql="select * from history where  data between '$sana1' and '$sana2'";
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Hisobot</title>
+    <style>
+        @page  {
+            size:A4;
+            margin: 0;
+            padding: 20px;
+
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h1 class="text text-center m-4">Qarzlar haqida hisobot </h1>
     <div class="d-flex justify-content-between mb-3 mt-4"> <a href="index.php" style="font-weight: 800" class="btn btn-success">Orqaga</a>
         <form class=" d-flex justify-content-between " action="" method="post">
-            <input name="sana1" style="width: 200px; height: 40px; border: 1px solid blue"  required type="date"  class=" form-control">
+            <input name="sana1" style="width: 200px; height: 40px; border: 1px solid blue"  required type="date" value="<?php if(isset($sana1)){ echo $sana1;}?>"  class=" form-control">
             <input name="sana1txt" style="width: 95px; height: 40px; border: 1px solid blue" value="sanasidan"  readonly type="text" class=" form-control">
 
-            <input name="sana2" style="width: 200px; height: 40px; border: 1px solid blue" required  type="date" class=" form-control">
+            <input name="sana2" style="width: 200px; height: 40px; border: 1px solid blue" required  type="date" value="<?php if(isset($sana1)){ echo $sana1;}?>" class=" form-control">
             <input name="sana2txt" style="width: 110px; height: 40px; border: 1px solid blue" value="sanasigacha"  readonly type="text" class=" form-control">
 
             <input style="width: 200px; font-weight: 900" type="submit" name="submit" class="btn btn-outline-success form-control "  value="Hisobot qurish">
@@ -90,6 +98,10 @@ $sql="select * from history where  data between '$sana1' and '$sana2'";
 
          <?php  }?>
         </table>
+        <button onclick="this.style.display='none'; window.print(); "  class="btn btn-primary">PDF shaklida chop etish</button>
+        <br>
+        <br>
+        <br>
     </div>
 </div>
 </body>
