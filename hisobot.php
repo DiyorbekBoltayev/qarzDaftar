@@ -47,7 +47,7 @@ $sql="select * from history where  data between '$sana1' and '$sana2'";
             <input name="sana1" style="width: 200px; height: 40px; border: 1px solid blue"  required type="date" value="<?php if(isset($sana1)){ echo $sana1;}?>"  class=" form-control">
             <input name="sana1txt" style="width: 95px; height: 40px; border: 1px solid blue" value="sanasidan"  readonly type="text" class=" form-control">
 
-            <input name="sana2" style="width: 200px; height: 40px; border: 1px solid blue" required  type="date" value="<?php if(isset($sana1)){ echo $sana1;}?>" class=" form-control">
+            <input name="sana2" style="width: 200px; height: 40px; border: 1px solid blue" required  type="date" value="<?php if(isset($sana1)){ echo $sana2;}?>" class=" form-control">
             <input name="sana2txt" style="width: 110px; height: 40px; border: 1px solid blue" value="sanasigacha"  readonly type="text" class=" form-control">
 
             <input style="width: 200px; font-weight: 900" type="submit" name="submit" class="btn btn-outline-success form-control " id="qurish"  value="Hisobot qurish">

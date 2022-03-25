@@ -67,15 +67,15 @@ $data_qarzlar=mysqli_fetch_assoc($result);
 
         <div class="mb-3">
             <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">To'layotgan summasi</label>
-            <input type="number" name="tsum" class="form-control" required  id="exampleInputPassword1">
+            <input type="number" name="tsum" class="form-control" title="Pul miqdorini kiriting. Masalan:17000" required  id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">Izoh</label>
-            <input type="text" name="izoh" class="form-control"  required id="exampleInputPassword1">
+            <input type="text" name="izoh" class="form-control" title="Qarzdor yoki qarz haqida ihtiyoriy biror bir matn"  required id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label style="color:#7009ef; font-weight: 700; font-size: 16px; for="exampleInputPassword1" class="form-label">Sana</label>
-            <input type="date" name="sana" class="form-control" required  id="exampleInputPassword1">
+            <input type="date" name="sana" class="form-control" title="Sanani kiritish uchun bosing" required  id="exampleInputPassword1">
         </div>
 
         <br>

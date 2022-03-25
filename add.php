@@ -72,23 +72,23 @@ if(isset($_POST['submit'])){
 
         <div class="mb-3">
             <label for="exampleInputEmail1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarzdor ismi</label>
-            <input type="text" name="name" class="form-control" required   id="exampleInputEmail1">
+            <input type="text" name="name" class="form-control" title="Ismni kirting. Masalan: Diyorbek" required   id="exampleInputEmail1">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" style="color:#7009ef; font-weight: 700; font-size: 16px; "class="form-label">Telefon raqami</label>
-            <input type="text" name="phone" class="form-control" required  id="exampleInputEmail1">
+            <input type="text" name="phone" title="Telefon raqamni kiriting.  Masalan:883621700" class="form-control" required  id="exampleInputEmail1">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarz summasi</label>
-            <input type="number" name="summasi" class="form-control" required  id="exampleInputPassword1">
+            <input type="number" name="summasi" title="Qarz miqdorini kiriting. Masalan:17000" class="form-control" required  id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Qarz izoh</label>
-            <input type="text" name="izoh" class="form-control"  required id="exampleInputPassword1">
+            <input type="text" name="izoh" class="form-control" title="Qarz haqida izoh kiriting. Masalan: yo'lda oldi"  required id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; " class="form-label">Sana</label>
-            <input type="date" name="sanasi" class="form-control" required  id="exampleInputPassword1">
+            <label for="exampleInputPassword1" style="color:#7009ef; font-weight: 700; font-size: 16px; "  class="form-label">Sana</label>
+            <input type="date" name="sanasi" class="form-control" title="Sanani kiritish uchun bosing" required  id="exampleInputPassword1">
         </div>
 
         <br>
